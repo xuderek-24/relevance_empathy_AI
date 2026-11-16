@@ -63,8 +63,8 @@ const QUESTIONS = [
   { id: "podcasts",   text: "I prefer listening to podcasts or audiobooks over reading", low: "no", high: "yes" },
 
   // Attention checks (expected answer noted for scoring)
-  { id: "attn_3", text: "I am going to respond with three to show I am paying attention", low: "no", high: "yes", attentionCheck: 3 },
-  { id: "attn_7", text: "I am going to respond with seven to show I am not distracted", low: "no", high: "yes", attentionCheck: 7 },
-  { id: "attn_5", text: "To me, it’s important that I respond with five to demonstrate I am paying attention", low: "relevant", high: "irrelevant", attentionCheck: 5 },
-  { id: "attn_1", text: "To me, it’s important that I respond with one to demonstrate I am not distracted", low: "relevant", high: "irrelevant", attentionCheck: 1 },
+  { id: "attn_3", text: "I am going to respond to this question with three to show I am focused", low: "no", high: "yes", attentionCheck: 3 },
+  { id: "attn_7", text: "I am going to respond to this question with seven to show I am not distracted", low: "no", high: "yes", attentionCheck: 7 },
+  { id: "attn_5", text: "To me, it’s important that I respond with five to this question to show I am focused", low: "relevant", high: "irrelevant", attentionCheck: 5 },
+  { id: "attn_1", text: "To me, it’s important that I respond with one to this question to show I am not distracted", low: "relevant", high: "irrelevant", attentionCheck: 1 },
 ];
