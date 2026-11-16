@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <!-- Intro -->
+    <section id="intro" class="screen">
+      <h1>Survey</h1>
+      <p>You will see a series of statements. For each one, choose the number from 1 to 7 that best describes you, using the words at each end of the scale as a guide.</p>
+      <p>There are no right or wrong answers. Each statement appears on its own page; please answer every one.</p>
+      <button id="start-btn" class="primary">Begin</button>
+    </section>
+
+    <!-- Question -->
+    <section id="question" class="screen" hidden>
+      <div class="progress" aria-hidden="true"><div id="progress-bar"></div></div>
+      <p id="progress-text" class="muted"></p>
+      <h2 id="q-text"></h2>
+      <fieldset id="scale" class="scale">
+        <legend class="visually-hidden">Choose a number from 1 to 7</legend>
+        <div id="scale-options" class="scale-options"></div>
+        <div class="anchors">
+          <span id="anchor-low"></span>
+          <span id="anchor-high"></span>
+        </div>
+      </fieldset>
+      <button id="next-btn" class="primary" disabled>Next</button>
+    </section>
+
+    <!-- End -->
+    <!-- End: nothing is submitted until the participant presses End -->
+    <section id="end" class="screen" hidden>
+      <h1>You've answered every question</h1>
+      <p>Press <strong>End</strong> to submit your responses. Your answers are not recorded until you do.</p>
+      <button id="end-btn" class="primary">End</button>
+    </section>
+
+    <section id="done" class="screen" hidden>
+      <h1>Thank you!</h1>
+      <p id="save-status">Saving your responses…</p>
+      <button id="download-btn" class="secondary" hidden>Download my responses (CSV)</button>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="questions.js"></script>
+  <script src="survey.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+:root {
+  --bg: #fafaf8;
+  --fg: #1d1d1f;
+  --muted: #6b6b70;
+  --accent: #2f5bd3;
+  --border: #d4d4d8;
+  --card: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.screen {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 24px;
+}
+
+h1 { margin-top: 0; font-size: 1.6rem; }
+h2 { font-size: 1.3rem; font-weight: 600; margin: 8px 0 32px; }
+.muted { color: var(--muted); font-size: 0.9rem; margin: 8px 0 0; }
+
+.progress { height: 6px; background: #ececef; border-radius: 3px; overflow: hidden; }
+#progress-bar { height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+
+.scale { border: 0; margin: 0 0 32px; padding: 0; }
+.scale-options { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+
+.scale-options label {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 1; max-height: 64px;
+  border: 1px solid var(--border); border-radius: 8px;
+  font-weight: 600; cursor: pointer; user-select: none;
+  transition: background .1s, border-color .1s;
+}
+.scale-options label:hover { border-color: var(--accent); }
+.scale-options input { position: absolute; opacity: 0; pointer-events: none; }
+.scale-options input:checked + span { color: #fff; }
+.scale-options label:has(input:checked) { background: var(--accent); border-color: var(--accent); color: #fff; }
+.scale-options label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.anchors {
+  display: flex; justify-content: space-between; gap: 16px;
+  margin-top: 10px; color: var(--muted); font-size: 0.95rem;
+}
+.anchors span:last-child { text-align: right; }
+
+button {
+  font: inherit; border-radius: 8px; padding: 10px 22px; cursor: pointer;
+}
+button.primary { background: var(--accent); color: #fff; border: 0; }
+button.primary:disabled { background: #b8c4e6; cursor: not-allowed; }
+button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
