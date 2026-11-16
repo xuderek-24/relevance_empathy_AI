@@ -16,11 +16,11 @@ const QUESTIONS = [
   { id: "insec_rel",  text: "To me, learning to deal with insecurity is", low: "relevant", high: "irrelevant" },
   { id: "insec_mean", text: "Knowing more ways to deal with insecurity", low: "means nothing to me", high: "means a lot to me" },
 
-  { id: "mind_imp",  text: "It’s ____ that I learn how to be more mindful is", low: "important", high: "unimportant" },
+  { id: "mind_imp",  text: "It’s ____ that I learn how to be more mindful", low: "important", high: "unimportant" },
   { id: "mind_rel",  text: "To me, practicing how to be more mindful is", low: "relevant", high: "irrelevant" },
   { id: "mind_mean", text: "Knowing how to be more mindful", low: "means nothing to me", high: "means a lot to me" },
 
-  { id: "fit_imp",  text: "It’s ____ that I become more physically fit is", low: "important", high: "unimportant" },
+  { id: "fit_imp",  text: "It’s ____ that I become more physically fit", low: "important", high: "unimportant" },
   { id: "fit_rel",  text: "To me, learning how to become more physically fit is", low: "relevant", high: "irrelevant" },
   { id: "fit_mean", text: "Becoming more physically fit", low: "means nothing to me", high: "means a lot to me" },
 
@@ -34,6 +34,7 @@ const QUESTIONS = [
 
   { id: "tech_imp",  text: "It’s ____ that I keep up with news about technology and digital innovations", low: "important", high: "unimportant" },
   { id: "tech_mean", text: "Keeping up with developments in technology and digital innovations", low: "means nothing to me", high: "means a lot to me" },
+  { id: "tech_rel",  text: "To me, keeping up with news about technology and digital innovations is", low: "relevant", high: "irrelevant" },
 
   { id: "music_mean",  text: "Keeping up to date about music, concerts, or new artists", low: "means nothing to me", high: "means a lot to me" },
   { id: "music_imp",   text: "It’s ____ that I keep up to date about news regarding music, concerts, or new artists", low: "important", high: "unimportant" },
@@ -50,17 +51,20 @@ const QUESTIONS = [
   { id: "skills_rel",  text: "To me, learning new skills occasionally is", low: "relevant", high: "irrelevant" },
 
   { id: "book_mean", text: "Having a book to read when I am bored", low: "means nothing to me", high: "means a lot to me" },
-  { id: "book_rel",  text: "To me, having a book to read when I am bored", low: "relevant", high: "irrelevant" },
+  { id: "book_rel",  text: "To me, having a book to read when I am bored is", low: "relevant", high: "irrelevant" },
   { id: "book_imp",  text: "It’s ____ that I have a book to read when I am bored", low: "important", high: "unimportant" },
 
-  { id: "creative",   text: "I participate in creative activities, such as photography, painting, or writing", low: "no", high: "yes" },
-  { id: "outdoors",   text: "I spend time outdoors", low: "no", high: "yes" },
-  { id: "group",      text: "I participate in group activities", low: "no", high: "yes" },
-  { id: "cooking",    text: "I explore cooking videos or new recipes online to try new things", low: "no", high: "yes" },
-  { id: "minimal",    text: "I prefer minimal decoration in my living environment", low: "no", high: "yes" },
-  { id: "weekend",    text: "I prefer spending my free weekends engaging in outdoor activities rather than staying indoors", low: "no", high: "yes" },
-  // NOTE: the source document gives no anchors for this item; no/yes is assumed.
-  { id: "podcasts",   text: "I prefer listening to podcasts or audiobooks over reading", low: "no", high: "yes" },
+  { id: "creative_mean", text: "Participating in creative activities, such as photography, painting, or writing", low: "means nothing to me", high: "means a lot to me" },
+  { id: "creative_imp",  text: "It’s ____ that I participate in creative activities, such as photography, painting, or writing", low: "important", high: "unimportant" },
+  { id: "creative_rel",  text: "To me, participating in creative activities, such as photography, painting, or writing is", low: "relevant", high: "irrelevant" },
+
+  { id: "group_mean", text: "Participating in regular group activities", low: "means nothing to me", high: "means a lot to me" },
+  { id: "group_imp",  text: "It’s ____ that I regularly participate in group activities", low: "important", high: "unimportant" },
+  { id: "group_rel",  text: "To me, being able to attend more group activities is", low: "relevant", high: "irrelevant" },
+
+  { id: "outdoors_mean", text: "Spending more time outdoors", low: "means nothing to me", high: "means a lot to me" },
+  { id: "outdoors_rel",  text: "To me, being able to spend more time outdoors is", low: "relevant", high: "irrelevant" },
+  { id: "outdoors_imp",  text: "It’s ____ that I spend more time outdoors", low: "important", high: "unimportant" },
 
   // Attention checks (expected answer noted for scoring)
   { id: "attn_3", text: "I am going to respond to this question with three to show I am focused", low: "no", high: "yes", attentionCheck: 3 },
