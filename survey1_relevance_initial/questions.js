@@ -48,7 +48,7 @@ const QUESTIONS = [
 
   { id: "skills_imp",  text: "It’s ____ that I learn new skills occasionally", low: "important", high: "unimportant" },
   { id: "skills_mean", text: "Learning new skills occasionally", low: "means nothing to me", high: "means a lot to me" },
-  { id: "skills_rel",  text: "To me, learning new skills occasionally is", low: "relevant", high: "irrelevant" },
+  { id: "skills_rel",  text: "To me, occasionally learning new skills is", low: "relevant", high: "irrelevant" },
 
   { id: "book_mean", text: "Having a book to read when I am bored", low: "means nothing to me", high: "means a lot to me" },
   { id: "book_rel",  text: "To me, having a book to read when I am bored is", low: "relevant", high: "irrelevant" },
@@ -56,7 +56,7 @@ const QUESTIONS = [
 
   { id: "creative_mean", text: "Participating in creative activities, such as photography, painting, or writing", low: "means nothing to me", high: "means a lot to me" },
   { id: "creative_imp",  text: "It’s ____ that I participate in creative activities, such as photography, painting, or writing", low: "important", high: "unimportant" },
-  { id: "creative_rel",  text: "To me, participating in creative activities, such as photography, painting, or writing is", low: "relevant", high: "irrelevant" },
+  { id: "creative_rel",  text: "To me, participating in creative activities, such as photography, painting, or writing, is", low: "relevant", high: "irrelevant" },
 
   { id: "group_mean", text: "Participating in regular group activities", low: "means nothing to me", high: "means a lot to me" },
   { id: "group_imp",  text: "It’s ____ that I regularly participate in group activities", low: "important", high: "unimportant" },
